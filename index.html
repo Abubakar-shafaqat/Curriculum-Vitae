@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Abubakar's Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="resume-container">
+    
+    <!-- Personal Information Section with Image on the Side -->
+    <header>
+      <img src="img.jpeg" alt="Profile Picture" class="profile-image">
+
+      <div class="personal-info">
+        <h1>MUHAMMAD ABUBAKAR</h1>
+        <p>Phone: 03282513267</p>
+        <p>Email: bakarabumuhammad78@gmail.com</p>
+        <p>Address: Sec 31D, P&T Society, Korangi, Karachi</p>
+      </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section>
+      <h2>About Me</h2>
+      <p>Hi, I’m Abubakar. I’m currently pursuing my intermediate at the Gov. Superior Science College. Hard work is my passion, and it makes me more responsible for my job role. I have a strong passion for learning new skills.</p>
+    </section>
+
+    <!-- Languages Section -->
+    <section>
+      <h2>Languages</h2>
+      <ul>
+        <li>Urdu</li>
+        <li>English</li>
+      </ul>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+      <ul>
+        <li>2 years of experience in Computer Hardware</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h4>Matric</h4>
+          Completed Matric in 2024 from Guardian Public School
+        </li>
+        <li>
+          <h4>Intermediate</h4>
+          Pre-Engineering, currently in progress
+        </li>
+      </ul>
+    </section>
+
+    <!-- Skills Section with Toggle Button -->
+    <button class="btn" onclick="toggleSkills()"> Skills</button>
+    <ul id="skills-list">
+    <section id="skills">
+      
+      
+        <li>Basic use of Computer</li>
+        <li>Basic Canva,Wordpress websites etc</li>
+        <li>Basic MS offic </li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>TypeScript</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- JavaScript to toggle skills visibility -->
+  <script>
+    function toggleSkills() {
+      var skillsList = document.getElementById('skills-list');
+      if (skillsList.style.display === 'none') {
+        skillsList.style.display = 'block';
+      } else {
+        skillsList.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
+
